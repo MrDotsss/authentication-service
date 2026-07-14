@@ -1,0 +1,71 @@
+# ==========================================
+# Environments & Dependencies
+# ==========================================
+# Python virtual environments (never commit libraries)
+.venv/
+venv/
+env/
+ENV/
+bin/
+lib/
+include/
+
+# Poetry, Pipenv, and Conda artifacts
+.poetry/
+.pipenv/
+.conda/
+pdm.lock
+
+# ==========================================
+# Caches & Runtime Artifacts
+# ==========================================
+# Byte-compiled / optimized modules
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches for linters, formatters, and type checkers
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.black/
+.coverage
+htmlcov/
+.cache/
+
+# ==========================================
+# Secrets & Environment Variables (CRITICAL)
+# ==========================================
+# Never commit database passwords, API keys, or JWT tokens
+.env
+.env.local
+.env.development
+.env.production
+*.env
+*.pem
+*.key
+*.secret
+
+# ==========================================
+# Databases & Logs
+# ==========================================
+# Local development databases (e.g., SQLite, PostgreSQL dumps)
+*.db
+*.sqlite3
+*.sql
+*.log
+logs/
+
+# ==========================================
+# IDE & System Files
+# ==========================================
+# Visual Studio Code settings
+.vscode/
+!.vscode/extensions.json
+
+# JetBrains / PyCharm settings
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
